@@ -1,0 +1,118 @@
+/* reset settings and give flex to the body */
+body{
+    background:#1F2937;
+    margin: 0;
+    padding: 20px;
+    border: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    flex:0;
+    gap: 1em;
+}
+body button{
+    background-color: #3882f6;
+    color: white;
+    border-radius: 6px;
+}
+
+/*--------------------------------*/
+
+header{
+    width: 100%;
+    background: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex:0;
+}
+header > .logo{
+    /*maybe a style later*/
+}
+header > .links-right{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+/*--------------------------------*/
+
+.top-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.top-box > div{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+.left-box{
+    flex-direction: column;
+    flex-basis:500px;
+    gap: 1em;
+}
+.right-box{
+    justify-content: center;
+    align-items: center;
+    flex-basis: 500px;
+}
+.big-brag{
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*--------------------------------*/
+
+.useless{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: grey;
+    height: 300px;
+    width: 100vw;
+}
+
+/*--------------------------------*/
+
+.card-holder{
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap:2em;
+    flex-wrap: wrap;
+
+}
+.cards{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    gap:4px;
+}
+.card{
+    border: 4px solid #3882f6;
+    border-radius: 9px;
+    width: 220px;
+    height: 220px;
+
+}
+.description{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
