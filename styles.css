@@ -11,7 +11,6 @@ body{
     position: relative;
     flex-direction: column;
     flex:0;
-    gap: 1em;
 }
 body button{
     background-color: #3882f6;
@@ -37,7 +36,14 @@ header > .logo{
 header > .links-right{
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: .5em;
+    font-size: x-small;
+    font-family: monospace;
+}
+.links-right > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*--------------------------------*/
@@ -49,7 +55,6 @@ header > .links-right{
     height: 300px;
 }
 .top-box > div{
-    color: white;
     display: flex;
     align-items: flex-start;
 }
@@ -57,11 +62,15 @@ header > .links-right{
     flex-direction: column;
     flex-basis:500px;
     gap: 1em;
+    color: white;
 }
 .right-box{
     justify-content: center;
     align-items: center;
     flex-basis: 500px;
+    background: #e5e7eb;
+    color:black;
+    height: inherit;
 }
 .big-brag{
     font-size: xx-large;
@@ -74,10 +83,10 @@ header > .links-right{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: grey;
-    height: 300px;
+    font-family: monospace;
+    font-size: xx-large;
+    background: white;
+    height: 100px;
     width: 100vw;
 }
 
@@ -89,7 +98,8 @@ header > .links-right{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     gap:2em;
     flex-wrap: wrap;
 
@@ -105,8 +115,8 @@ header > .links-right{
 .card{
     border: 4px solid #3882f6;
     border-radius: 9px;
-    width: 220px;
-    height: 220px;
+    width: 140px;
+    height: 140px;
 
 }
 .description{
@@ -115,4 +125,31 @@ header > .links-right{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+/*--------------------------------*/
+
+.quote{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: x-large;
+    gap: 1em;
+}
+.quote-author{
+    font-weight: bold;
+}
+
+/*--------------------------------*/
+
+.bottom-box{
+
 }
