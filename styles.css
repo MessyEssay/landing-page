@@ -53,6 +53,7 @@ header > .links-right{
     justify-content: center;
     align-items: center;
     height: 300px;
+
 }
 .top-box > div{
     display: flex;
@@ -64,14 +65,18 @@ header > .links-right{
     gap: 1em;
     color: white;
 }
+.top-box > .right-box{
+    align-items: center;
+
+}
 .right-box{
     justify-content: center;
-    align-items: center;
     flex-basis: 500px;
     background: #e5e7eb;
     color:black;
     height: inherit;
 }
+
 .big-brag{
     font-size: xx-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -150,6 +155,55 @@ header > .links-right{
 
 /*--------------------------------*/
 
-.bottom-box{
+footer{
+    background: white;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
 
+
+}
+.bottom-box{
+    background-color: #3882f6;
+    border-radius: 6px;
+    width: 350px;
+    margin: 30px;
+    padding: 15px;
+    padding-top :35px;
+    padding-bottom :35px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 0px;
+    gap:1em;
+}
+.hook{
+    font-weight: bolder;
+    font-family: fantasy;
+    gap:.3em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hook > div{
+    font-family: monospace;
+    font-size: x-small;
+    font-weight: lighter;
+}
+.bottom-box>button{
+    flex:0 0 70px;
+    border: 1px solid;
+}
+footer >.cr{
+    font-family: monospace;
+    font-size: xx-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    height: 20px;
+    width: 100vw;
 }
